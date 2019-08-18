@@ -35,11 +35,11 @@ func init() {
 	envelope = Envelope{ID: "cec76b153cc8a85c5", Text: "test", Gesmes: "STestl", Xmlns: "test", Subject: "test", Sender: sender, Cube: cube}
 }
 
-func TestInsertEnvelope(t *testing.T) {
-	assert := assert.New(t)
-	err := repo.InsertEnvelope(envelope)
-	assert.NoError(err)
-}
+//func TestInsertEnvelope(t *testing.T) {
+//	assert := assert.New(t)
+//	err := repo.InsertEnvelope(envelope)
+//	assert.NoError(err)
+//}
 
 func TestGetEnvelope(t *testing.T) {
 	assert := assert.New(t)

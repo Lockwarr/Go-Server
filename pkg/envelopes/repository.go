@@ -47,7 +47,7 @@ func (r *repository) GetEnvelope() (Envelope, error) {
 	var envelope Envelope
 	err := r.session.Query(`SELECT cube, gesmes, sender, subject, text, xmlns FROM envelopes`).Consistency(gocql.One).Scan(&envelope.Cube, &envelope.Gesmes, &envelope.Sender, &envelope.Subject, &envelope.Text, &envelope.Xmlns)
 	if err != nil {
-		log.Fatal(err)
+		log.Println(err)
 	}
 	return envelope, err
 }
