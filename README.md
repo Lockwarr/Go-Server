@@ -4,7 +4,7 @@ I am using windows docker. Installed docker and then entered the following comma
 - >docker run -p 9042:9042 --rm --name scylladb -d scylladb/scylla
 - >docker exec -it scylladb cqlsh
 
-In order to create new keyspace, user defined types and table copy and paste the following code into the cqlsh
+In order to create new keyspace, user defined types and table - copy and paste the following code into the cqlsh ( in powershell I could paste in cqlsh with right click) 
 
 `CREATE KEYSPACE denislav WITH REPLICATION = {'class' : 'SimpleStrategy','replication_factor' : 1};`
 
