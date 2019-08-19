@@ -44,5 +44,9 @@ In order to create new keyspace, user defined types and table - copy and paste t
 );`
 
 
+Navigate to cmd/server and enter the following commands in the console
+ 
+`go build`
+`./server`
 
 
